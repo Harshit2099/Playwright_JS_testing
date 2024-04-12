@@ -18,6 +18,30 @@ function reverseString(str) {
 console.log(reverseString("My user is AdminUser"));
 
 
+// by using loops
+function reverseWordsNoOrderChange(str3)
+{       
+    var words = str3.split(" ");
+    console.log(words);
+    var revWordsarray = [];    
+    words.forEach(word =>
+        {
+            var revwordsstr = "";
+            for (var i = word.length -1; i>=0; i--)
+            {
+                revwordsstr = revwordsstr + word[i];
+                console.log(revwordsstr)
+            }
+            revWordsarray.push(revwordsstr);
+            console.log(revWordsarray);
+    })
+    return revWordsarray.join(" ");
+}
+
+console.log(reverseWordsNoOrderChange("hello this is a test"));
+
+
+
 
 
 "My user is AdminUser" 
